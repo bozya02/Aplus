@@ -14,7 +14,7 @@
             
             <StackLayout>
                 <Label Text="Пароль"/>
-                <Entry/>
+                <Entry IsPassword="True"/>
             </StackLayout>
         </StackLayout>
 

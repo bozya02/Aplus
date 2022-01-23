@@ -4,9 +4,29 @@
              x:Class="Aplus.PageRegistration">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="E-mail"/>
+                    <Entry Keyboard="Email"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Логин"/>
+                    <Entry/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Пароль"/>
+                    <Entry IsPassword="True"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Пароль"/>
+                    <Entry IsPassword="True"/>
+                </StackLayout>
+
+                <Button Text="Зарегистриоваться" Clicked="btnSignUpClicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
