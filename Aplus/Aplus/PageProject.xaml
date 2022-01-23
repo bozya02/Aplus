@@ -5,8 +5,8 @@
             x:Class="Aplus.PageProject">
   <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
-        <local:PageAbout />
-        <local:PageImages />
-        <local:PageContacts />
+        <local:PageAbout Title="О проекте"/>
+        <local:PageImages Title="Картинки"/>
+        <local:PageContacts Title="Контакты"/>
     </TabbedPage.Children>
 </TabbedPage>

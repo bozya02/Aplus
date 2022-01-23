@@ -9,14 +9,14 @@
         <StackLayout>
             <StackLayout>
                 <Label Text="Логин"/>
-                <Frame BorderColor="Black">
+                <Frame BorderColor="Black" Padding="0">
                     <Entry/>
                 </Frame>
             </StackLayout>
             
             <StackLayout>
                 <Label Text="Пароль"/>
-                <Frame BorderColor="Black">
+                <Frame BorderColor="Black" Padding="0">
                     <Entry IsPassword="True"/>
                 </Frame>
             </StackLayout>

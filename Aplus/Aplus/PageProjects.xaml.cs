@@ -12,11 +12,11 @@ namespace Aplus
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageProjects : ContentPage
     {
-        public List<Project> Projects { get; set; }
+        public List<string> Projects { get; set; }
         public PageProjects()
         {
             InitializeComponent();
-            Projects = new List<Project>();
+            Projects = new List<string>();
             FillList();
             this.BindingContext = this;
         }
@@ -25,13 +25,13 @@ namespace Aplus
         {
             for (int i = 0; i < 20; i++)
             {
-                Projects.Add(new Project($"Проект {i + 1}"));
+                Projects.Add($"Проект {i + 1}");
             }
         }
 
         private async void lwProjectsItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushModalAsync(new PageProject((lwProjects.SelectedItem as Project).Name));
+            await Navigation.PushModalAsync(new PageProject(lwProjects.SelectedItem.ToString()));
         }
     }
 }
