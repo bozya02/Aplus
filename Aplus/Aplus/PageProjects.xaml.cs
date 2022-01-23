@@ -31,7 +31,7 @@ namespace Aplus
 
         private async void lwProjectsItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushModalAsync(new PageProject(lwProjects.SelectedItem.ToString()));
+            await Navigation.PushAsync(new PageProject(lwProjects.SelectedItem.ToString()));
         }
     }
 }

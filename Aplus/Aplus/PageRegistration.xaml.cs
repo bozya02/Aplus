@@ -19,7 +19,7 @@ namespace Aplus
 
         private async void btnSignUpClicked(object sender, EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            await Navigation.PopAsync();
         }
     }
 }

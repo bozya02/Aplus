@@ -6,19 +6,27 @@
         <StackLayout>
             <StackLayout>
                 <Label Text="Телефон"/>
-                <Entry Keyboard="Telephone"/>
+                <Frame BorderColor="Black" Padding="0">
+                    <Entry Keyboard="Telephone"/>
+                </Frame>
             </StackLayout>
             <StackLayout>
                 <Label Text="Телефон"/>
-                <Entry Keyboard="Telephone"/>
+                <Frame BorderColor="Black">
+                    <Entry Keyboard="Telephone"/>
+                </Frame>
             </StackLayout>
             <StackLayout>
                 <Label Text="E-mail"/>
-                <Entry Keyboard="Email"/>
+                <Frame BorderColor="Black">
+                    <Entry Keyboard="Email"/>
+                </Frame>
             </StackLayout>
             <StackLayout>
                 <Label Text="Адрес"/>
-                <Entry/>
+                <Frame BorderColor="Black">
+                    <Entry/>
+                </Frame>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

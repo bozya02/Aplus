@@ -17,13 +17,12 @@ namespace Aplus
 
         private async void btnSignUpClicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new PageRegistration());
+            await Navigation.PushAsync(new PageRegistration());
         }
 
         private async void btnLoginClicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new PageProjects());
-            //await Navigation.PushModalAsync();
+            await Navigation.PushAsync(new PageProjects());
         }
     }
 }
