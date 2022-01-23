@@ -16,6 +16,7 @@ namespace Aplus
         public PageProjects()
         {
             InitializeComponent();
+            Projects = new List<Project>();
             FillList();
             this.BindingContext = this;
         }
