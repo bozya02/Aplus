@@ -14,5 +14,16 @@ namespace Aplus
         {
             InitializeComponent();
         }
+
+        private async void btnSignUpClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PageRegistration());
+        }
+
+        private async void btnLoginClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PageRegistration());
+            //await Navigation.PushModalAsync();
+        }
     }
 }
