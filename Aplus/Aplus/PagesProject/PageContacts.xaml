@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplus.PagesProject.PageContacts">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Телефон"/>
+                <Entry Keyboard="Telephone"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Телефон"/>
+                <Entry Keyboard="Telephone"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="E-mail"/>
+                <Entry Keyboard="Email"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Адрес"/>
+                <Entry/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

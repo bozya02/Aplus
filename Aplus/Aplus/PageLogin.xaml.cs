@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace Aplus
 {
-    public partial class MainPage : ContentPage
+    public partial class PageLogin : ContentPage
     {
-        public MainPage()
+        public PageLogin()
         {
             InitializeComponent();
         }

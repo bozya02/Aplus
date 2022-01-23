@@ -10,7 +10,7 @@ namespace Aplus
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new PageLogin();
         }
 
         protected override void OnStart()

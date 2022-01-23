@@ -7,22 +7,30 @@
             <StackLayout>
                 <StackLayout>
                     <Label Text="E-mail"/>
-                    <Entry Keyboard="Email"/>
+                    <Frame BorderColor="Black">
+                        <Entry Keyboard="Email"/>
+                    </Frame>
                 </StackLayout>
 
                 <StackLayout>
                     <Label Text="Логин"/>
-                    <Entry/>
+                    <Frame BorderColor="Black">
+                        <Entry/>
+                    </Frame>    
                 </StackLayout>
 
                 <StackLayout>
                     <Label Text="Пароль"/>
-                    <Entry IsPassword="True"/>
+                    <Frame BorderColor="Black">
+                        <Entry IsPassword="True"/>
+                    </Frame>
                 </StackLayout>
 
                 <StackLayout>
                     <Label Text="Пароль"/>
-                    <Entry IsPassword="True"/>
+                    <Frame BorderColor="Black">
+                        <Entry IsPassword="True"/>
+                    </Frame>
                 </StackLayout>
 
                 <Button Text="Зарегистриоваться" Clicked="btnSignUpClicked"/>
