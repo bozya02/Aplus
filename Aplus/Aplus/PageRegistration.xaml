@@ -10,6 +10,7 @@
             <Entry Keyboard="Email" Placeholder="Пароль" IsPassword="True"/>
             <Entry Keyboard="Email" Placeholder="Пароль" IsPassword="True"/>
             <Button Text="Зарегистриоваться" Clicked="btnSignUpClicked" VerticalOptions="EndAndExpand"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

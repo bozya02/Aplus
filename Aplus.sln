@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplus.Android", "Aplus\Aplu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplus.iOS", "Aplus\Aplus.iOS\Aplus.iOS.csproj", "{CDBE8118-A50C-45DA-9DF8-8C2B241991C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplus", "Aplus\Aplus\Aplus.csproj", "{872AEB8A-056F-4714-A1CA-69B7200AD4CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplus", "Aplus\Aplus\Aplus.csproj", "{872AEB8A-056F-4714-A1CA-69B7200AD4CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
