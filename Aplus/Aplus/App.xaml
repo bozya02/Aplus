@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplus.App">
     <Application.Resources>
-
+        <Style TargetType="Button">
+            <Setter Property="CornerRadius" Value="100"/>
+            <Setter Property="BackgroundColor" Value="DeepSkyBlue"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
     </Application.Resources>
 </Application>
