@@ -4,9 +4,6 @@
              x:Class="Aplus.PageRegistration"
              Visual="Material"
              Title="Регистрация">
-    <NavigationPage.TitleView>
-        <Label
-    </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout Spacing="40" Margin="0, 30">
             <Entry Placeholder="Логин"/>

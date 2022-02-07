@@ -11,7 +11,9 @@
         <Style TargetType="NavigationPage">
             <Setter Property="BarBackgroundColor" Value="DeepSkyBlue"/>
             <Setter Property="BackgroundColor" Value="White"/>
-            <Setter Property="Padding" Value="30"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="Margin" Value="30,0"/>
         </Style>
     </Application.Resources>
 </Application>
