@@ -4,14 +4,13 @@ using Xamarin.Forms.Xaml;
 
 namespace Aplus
 {
-    
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
 
-            MainPage =new NavigationPage( new PageLogin());
+            MainPage =new NavigationPage(new PageLogin());
         }
 
         protected override void OnStart()

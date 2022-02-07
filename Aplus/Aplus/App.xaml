@@ -8,5 +8,10 @@
             <Setter Property="BackgroundColor" Value="DeepSkyBlue"/>
             <Setter Property="Padding" Value="5"/>
         </Style>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="DeepSkyBlue"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="Padding" Value="30"/>
+        </Style>
     </Application.Resources>
 </Application>

@@ -2,13 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplus.PageRegistration"
-             Visual="Material">
+             Visual="Material"
+             Title="Регистрация">
+    <NavigationPage.TitleView>
+        <Label
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout Spacing="40" Padding="30">
-            <Entry Keyboard="Email" Placeholder="Логин"/>
+        <StackLayout Spacing="40" Margin="0, 30">
+            <Entry Placeholder="Логин"/>
             <Entry Keyboard="Email" Placeholder="E-mail"/>
-            <Entry Keyboard="Email" Placeholder="Пароль" IsPassword="True"/>
-            <Entry Keyboard="Email" Placeholder="Пароль" IsPassword="True"/>
+            <Entry Placeholder="Пароль" IsPassword="True"/>
+            <Entry Placeholder="Пароль" IsPassword="True"/>
             <Button Text="Зарегистриоваться" Clicked="btnSignUpClicked" VerticalOptions="EndAndExpand"/>
             
         </StackLayout>
