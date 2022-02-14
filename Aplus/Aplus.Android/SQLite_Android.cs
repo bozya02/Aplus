@@ -6,7 +6,7 @@ using Xamarin.Forms;
 [assembly: Dependency(typeof(Aplus_Android))]
 namespace Aplus.Droid
 {
-    public class Aplus_Android : ISQLite
+    public class Aplus_Android : LocalDB.ISQLite
     {
         public Aplus_Android() { }
         public string GetDatabasePath(string sqliteFilename)

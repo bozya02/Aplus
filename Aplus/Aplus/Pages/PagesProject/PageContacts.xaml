@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplus.PagesProject.PageContacts"
+             Visual="Material"
+             Title="Контакты">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="entryPhone" Placeholder="Телефон" IsEnabled="False" Keyboard="Telephone"/>
+            <Entry x:Name="entryEmail" Placeholder="E-mail" IsEnabled="False" Keyboard="Email"/>
+            <Entry x:Name="entryAddress" Placeholder="Адрес" IsEnabled="False" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

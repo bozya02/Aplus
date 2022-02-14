@@ -12,6 +12,9 @@
             <Setter Property="BarBackgroundColor" Value="DeepSkyBlue"/>
             <Setter Property="BackgroundColor" Value="White"/>
         </Style>
+        <Style TargetType="TabbedPage">
+            <Setter Property="BarBackgroundColor" Value="DeepSkyBlue"/>
+        </Style>
         <Style TargetType="Entry">
             <Setter Property="Margin" Value="30,0"/>
         </Style>

@@ -5,10 +5,13 @@
              Visual="Material"
              Title="Проекты">
     <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="add.png" Priority="0" Order="Primary"/>
+        <ToolbarItem Priority="0" Order="Primary">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe145;"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        
         <StackLayout>
             <ListView x:Name="lwProjects" ItemsSource="{Binding Projects}" ItemSelected="lwProjectsItemSelected"/>
         </StackLayout>

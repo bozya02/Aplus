@@ -18,28 +18,28 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="PageLogin.xaml.cs">
+    <Compile Update="Pages\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="PageProject.xaml">
+    <EmbeddedResource Update="Pages\PageProject.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PageProjects.xaml">
+    <EmbeddedResource Update="Pages\PageProjects.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PageRegistration.xaml">
+    <EmbeddedResource Update="Pages\PageRegistration.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PagesProject\PageAbout.xaml">
+    <EmbeddedResource Update="Pages\PagesProject\PageAbout.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PagesProject\PageContacts.xaml">
+    <EmbeddedResource Update="Pages\PagesProject\PageContacts.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PagesProject\PageImages.xaml">
+    <EmbeddedResource Update="Pages\PagesProject\PageImages.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

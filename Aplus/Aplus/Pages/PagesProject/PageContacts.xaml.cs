@@ -7,14 +7,19 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Aplus.LocalDB;
+
 namespace Aplus.PagesProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PageImages : ContentPage
+    public partial class PageContacts : ContentPage
     {
-        public PageImages()
+        public PageContacts(Project project)
         {
             InitializeComponent();
+            entryPhone.Text = project.Phone;
+            entryEmail.Text = project.Email;
+            entryAddress.Text = project.Address;
         }
     }
 }
