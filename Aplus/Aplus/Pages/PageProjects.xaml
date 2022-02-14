@@ -5,7 +5,7 @@
              Visual="Material"
              Title="Проекты">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Priority="0" Order="Primary">
+        <ToolbarItem Priority="0" Order="Primary" Clicked="tbAddClicked">
             <ToolbarItem.IconImageSource>
                 <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe145;"/>
             </ToolbarItem.IconImageSource>
@@ -13,7 +13,17 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="lwProjects" ItemsSource="{Binding Projects}" ItemSelected="lwProjectsItemSelected"/>
+            <ListView x:Name="lwProjects" ItemsSource="{Binding Projects}" ItemSelected="lwProjectsItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Label Text="{Binding Name}"/>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

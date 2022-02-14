@@ -13,14 +13,14 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout>
+            <StackLayout Spacing="20">
                 <Entry x:Name="entryName" Placeholder="Имя проекта"/>
                 <Editor x:Name="entryDesc" Placeholder="Описание"/>
                 <Entry x:Name="entryPhone" Placeholder="Телефон"/>
                 <Entry x:Name="entryEmail" Placeholder="E-mail"/>
                 <Entry x:Name="entryAddress" Placeholder="Адрес"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
                 <Button Text="Отмена" Clicked="btnCancelClicked"/>
                 <Button Text="Изменить" Clicked="btnEditClicked"/>
             </StackLayout>

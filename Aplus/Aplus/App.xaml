@@ -18,5 +18,8 @@
         <Style TargetType="Entry">
             <Setter Property="Margin" Value="30,0"/>
         </Style>
+        <Style TargetType="Editor">
+            <Setter Property="Margin" Value="30,0"/>
+        </Style>
     </Application.Resources>
 </Application>

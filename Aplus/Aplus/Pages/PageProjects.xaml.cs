@@ -14,17 +14,22 @@ namespace Aplus
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageProjects : ContentPage
     {
-        public List<Project> Projects { get; set; }
+        public IEnumerable<Project> Projects { get; set; }
         public PageProjects()
         {
             InitializeComponent();
-            Projects = new List<Project>();
+            Projects = App.Database.GetProjects();
             this.BindingContext = this;
         }
 
         private async void lwProjectsItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             await Navigation.PushAsync(new PageProject(lwProjects.SelectedItem as Project));
+        }
+
+        private async void tbAddClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PageAddProject());
         }
     }
 }

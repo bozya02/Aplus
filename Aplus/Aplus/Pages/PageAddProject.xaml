@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Aplus.PageAddProject">
+             x:Class="Aplus.PageAddProject"
+             Visual="Material"
+             Title="Создать проект">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Spacing="20">
+                <Entry x:Name="entryName" Placeholder="Имя проекта"/>
+                <Editor x:Name="entryDesc" Placeholder="Описание"/>
+                <Entry x:Name="entryPhone" Placeholder="Телефон"/>
+                <Entry x:Name="entryEmail" Placeholder="E-mail"/>
+                <Entry x:Name="entryAddress" Placeholder="Адрес"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
+                <Button Text="Отмена" Clicked="btnCancelClicked"/>
+                <Button Text="Добавить" Clicked="btnAddClicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
