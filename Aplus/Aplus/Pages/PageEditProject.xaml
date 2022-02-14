@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Aplus.PageEditProject">
+             x:Class="Aplus.PageEditProject"
+             Visual="Material"
+             Title="Изменить проект">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Priority="0" Order="Primary" Clicked="tbDeleteClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe872;"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Entry x:Name="entryName" Placeholder="Имя проекта"/>
+                <Editor x:Name="entryDesc" Placeholder="Описание"/>
+                <Entry x:Name="entryPhone" Placeholder="Телефон"/>
+                <Entry x:Name="entryEmail" Placeholder="E-mail"/>
+                <Entry x:Name="entryAddress" Placeholder="Адрес"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Отмена" Clicked="btnCancelClicked"/>
+                <Button Text="Изменить" Clicked="btnEditClicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
