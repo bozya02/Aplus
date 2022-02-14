@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplus.PagesProject.PageImages"
-             Visual="Material"
-             Title="Картинки">
+             Visual="Material">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand">
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">

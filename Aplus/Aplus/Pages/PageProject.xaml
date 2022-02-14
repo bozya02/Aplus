@@ -2,14 +2,13 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:Aplus.PagesProject"
-            x:Class="Aplus.PageProject">
+            x:Class="Aplus.PageProject"
+            Visual="Material">
     <TabbedPage.ToolbarItems>
-        <ToolbarItem IconImageSource="add.png" Priority="1" Order="Primary"/>
+        <ToolbarItem Priority="1" Order="Primary" Clicked="tbEditClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="MaterailIcons" Glyph="&#xe3c9;"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
     </TabbedPage.ToolbarItems>
-  <!--Pages can be added as references or inline-->
-    <TabbedPage.Children>
-        <local:PageAbout Title="О проекте"/>
-        <local:PageImages Title="Картинки"/>
-        <local:PageContacts Title="Контакты"/>
-    </TabbedPage.Children>
 </TabbedPage>

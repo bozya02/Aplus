@@ -7,31 +7,24 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Aplus.LocalDB;
+
 namespace Aplus
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageProjects : ContentPage
     {
-        public List<string> Projects { get; set; }
+        public List<Project> Projects { get; set; }
         public PageProjects()
         {
             InitializeComponent();
-            Projects = new List<string>();
-            FillList();
+            Projects = new List<Project>();
             this.BindingContext = this;
-        }
-
-        public void FillList()
-        {
-            for (int i = 0; i < 20; i++)
-            {
-                Projects.Add($"Проект {i + 1}");
-            }
         }
 
         private async void lwProjectsItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushAsync(new PageProject(lwProjects.SelectedItem.ToString()));
+            await Navigation.PushAsync(new PageProject(lwProjects.SelectedItem as Project));
         }
     }
 }

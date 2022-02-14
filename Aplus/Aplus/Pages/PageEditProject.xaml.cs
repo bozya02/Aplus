@@ -7,14 +7,16 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Aplus.LocalDB;
+
 namespace Aplus
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PageEditProject : ContentPage
 	{
-		public PageEditProject ()
+		public PageEditProject(Project project)
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
 	}
 }

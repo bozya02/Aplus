@@ -7,15 +7,29 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Aplus.LocalDB;
+
 namespace Aplus
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageProject : TabbedPage
     {
-        public PageProject(string projectName)
+        public Project project { get; set; }
+        public PageProject(Project newProject)
         {
             InitializeComponent();
-            Title = projectName;
+            project = newProject;
+
+            Title = project.Name;
+
+            Children.Add(new PagesProject.PageAbout(project));
+            Children.Add(new PagesProject.PageImages(project));
+            Children.Add(new PagesProject.PageContacts(project));
+        }
+
+        private async void tbEditClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PageEditProject(project));
         }
     }
 }
